@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    background-color:aquamarine;
+    overflow: hidden;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 219, 219);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    font-family: 'Tektur', cursive;
+    color:rgb(110, 45, 45);
+    font-size: 3vw;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(110, 45, 45);
+    font-size: 1.5vw;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(110, 45, 45);
+    font-size: 15px;
+}
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 13%;
+}
+
+/* Precisa estar dividido em 4 partes referentes as cores, delimitando o espaço de cada */
+.genius{
+    display: grid;
+    grid-template-areas: "verde vermelho" 
+    "amarelo azul"; 
+
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    border-radius: 100%;
+    margin-top: 20px;  /*Para zoom em 80% ficou ok*/
+    width:53.3vw;
+    height: 90vh;
+    
+}
+
+
+.centro{
+    background-color: aliceblue;
+    border-radius: 100%;
+    height: 20vh;
+    width: 15vw;
+    position: absolute;
+    z-index: 9;
+    margin-top: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 19.5%;
+    line-height:0.01vh;
+}
+
+
+.blue{
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border: 10px solid aliceblue;
+}
+.red{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+    border: 10px solid aliceblue;
+    
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: rgb(255, 255, 0);
+    border-bottom-left-radius: 100%;
+    border: 10px solid aliceblue;
+}
+
+.green{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    border: 10px solid aliceblue;
+}
+
+
+
+/* Para mostrar a cor da vez */
+.selected{
+    opacity: 0.5;
+    
+}
